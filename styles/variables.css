@@ -6,15 +6,15 @@
   --secondary-accent-color: rgb(131, 23, 184);
   --shadow-accent-color: rgb(107, 8, 161);
 
-  --size-xs: 0.6rem;
-  --size-s: 0.8rem;
+  --size-xs: 0.7rem;
+  --size-s: 0.85rem;
   --size-m: 1rem;
   --size-l: 1.2rem;
   --size-xl: 1.4rem;
   --size-xxl: 1.8rem;
 
   --font-size-xs: var(--size-xs);
-  --font-size-s: var(--size-m);
+  --font-size-s: var(--size-s);
   --font-size-m: var(--size-m);
   --font-size-l: var(--size-l);
   --font-size-xl: var(--size-xl);
@@ -24,6 +24,7 @@
   --padding-s: var(--size-s);
   --padding-m: var(--size-m);
   --padding-l: var(--size-l);
+  --padding-xl: var(--size-xl);
 
   --margin-xs: var(--size-xs);
   --margin-s: var(--size-s);
@@ -32,6 +33,7 @@
   --margin-xl: var(--size-xl);
   --margin-xxl: var(--size-xxl);
 
+  --border-radius-xs: 0.7rem;
   --border-radius-s: 1rem;
   --border-radius-m: 2rem;
 }
