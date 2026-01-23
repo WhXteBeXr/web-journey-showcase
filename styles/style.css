@@ -188,14 +188,14 @@
 .card:hover {
   border: 2px solid var(--primary-accent-color);
   transform: scale(1.03);
-  animation: change-color 4s alternate infinite ease-in-out;
+  animation: change-color 6s alternate infinite ease-in-out;
   box-shadow: none;
 }
 
 .card:target {
   border: 2px solid var(--primary-accent-color);
   transform: scale(1.03);
-  animation: change-color 4s alternate infinite ease-in-out;
+  animation: change-color 6s alternate infinite ease-in-out;
   box-shadow: none;
 }
 
