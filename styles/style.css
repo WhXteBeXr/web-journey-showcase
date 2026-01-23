@@ -45,7 +45,7 @@
   min-block-size: 100vh;
   min-inline-size: 450px;
   padding: var(--padding-xxl);
-  font-family: 'Exo2', 'Montserrat', sans-serif;
+  font-family: 'Exo2', Montserrat, sans-serif;
   font-size: var(--font-size-m);
   background-color: var(--primary-color);
   color: var(--text-color);
