@@ -1,17 +1,22 @@
 :root {
-  --text-color: #fff;
-  --primary-color: rgb(22, 22, 22);
-  --secondary-color: rgb(33, 33, 33);
+  --white: #fff;
+  --dark-gray: rgb(22, 22, 22);
+  --light-gray: rgb(33, 33, 33);
+
+  --text-color: var(--white);
+  --primary-color: var(--dark-gray);
+  --secondary-color: var(--light-gray);
   --primary-accent-color: rgb(172, 59, 230);
   --secondary-accent-color: rgb(131, 23, 184);
   --shadow-accent-color: rgb(107, 8, 161);
 
+  --size-xxs: 0.5rem;
   --size-xs: 0.7rem;
   --size-s: 0.85rem;
   --size-m: 1rem;
   --size-l: 1.2rem;
   --size-xl: 1.4rem;
-  --size-xxl: 1.8rem;
+  --size-xxl: 2rem;
 
   --font-size-xs: var(--size-xs);
   --font-size-s: var(--size-s);
@@ -20,11 +25,13 @@
   --font-size-xl: var(--size-xl);
   --font-size-xxl: var(--size-xxl);
 
+  --padding-xss: var(--size-xxs);
   --padding-xs: var(--size-xs);
   --padding-s: var(--size-s);
   --padding-m: var(--size-m);
   --padding-l: var(--size-l);
   --padding-xl: var(--size-xl);
+  --padding-xxl: var(--size-xxl);
 
   --margin-xs: var(--size-xs);
   --margin-s: var(--size-s);

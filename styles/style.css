@@ -10,11 +10,32 @@
   }
 }
 
+@keyframes breathing-border {
+  from {
+    border: 4px solid var(--primary-accent-color);
+  }
+  50% {
+    border: 4px solid var(--secondary-accent-color);
+  }
+  to {
+    border: 4px solid var(--shadow-accent-color);
+  }
+}
+
+@keyframes breathing-text {
+  from {
+    color: var(--text-color);
+  }
+  to {
+    color: var(--primary-accent-color)
+  }
+}
+
 .page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: var(--padding-m);
+  padding: var(--padding-xxl);
   font-family: 'Montserrat', sans-serif;
   font-size: var(--font-size-m);
   background-color: var(--primary-color);
@@ -37,7 +58,7 @@
   gap: 1rem;
   align-items: center;
   background-color: var(--secondary-color);
-  margin-bottom: var(--margin-xl);
+  margin-bottom: var(--margin-xxl);
   padding: var(--padding-l);
 }
 
@@ -90,16 +111,17 @@
 
 .main__cards {
   grid-column: 1;
-  align-items: start;
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding: var(--padding-l);
+  padding: var(--padding-xl);
+  gap: 2rem;
 }
 
 .card {
-  min-block-size: 300px;
+  min-block-size: 350px;
   background-color: var(--secondary-color);
+  border: 2px solid transparent;
   border-radius: var(--border-radius-m);
   transition: border 0.3s, transform 0.3s, box-shadow 0.5s, animation 0.5s;
 }
@@ -107,7 +129,14 @@
 .card:hover {
   border: 2px solid var(--primary-accent-color);
   transform: scale(1.03);
-  animation: change-color 3s alternate infinite ease-in-out;
+  animation: change-color 2s alternate infinite ease-in-out;
+  box-shadow: none;
+}
+
+.card:target {
+  border: 2px solid var(--primary-accent-color);
+  transform: scale(1.03);
+  animation: change-color 2s alternate infinite ease-in-out;
   box-shadow: none;
 }
 
@@ -115,49 +144,112 @@
   inline-size: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  object-position: center;
   border-radius: var(--border-radius-m) var(--border-radius-m) 0 0;
 }
 
 .card__caption {
-  block-size: 150px;
+  block-size: 200px;
   padding: var(--padding-xl);
   overflow: scroll;
 }
 
+.card__title {
+  font-size: var(--font-size-xl);
+  margin: 0  0 var(--margin-s) 0;
+}
+
 .main__sidebar {
   background-color: var(--secondary-color);
-  border-radius: var(--border-radius-s);
+  border-radius: var(--border-radius-m);
   margin: var(--margin-m);
-  padding: var(--padding-m);
+  padding: var(--padding-xl);
+  border: 4px solid var(--primary-accent-color);
+  animation: breathing-border 3s alternate infinite;
 }
 
 .sidebar__list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0;
   list-style: none;
 }
 
-.sidebar__button {
+.sidebar__item {
   inline-size: 100%;
-  padding: var(--padding-xs);
-  aspect-ratio: 16/4;
+  block-size: 3.8rem;
   background-color: var(--primary-accent-color);
-  border-radius: var(--border-radius-xs);
+  border-radius: var(--border-radius-s);
   border: none;
   transition: box-shadow 0.2s, scale 0.2s;
+  font-size: var(--font-size-m);
+  text-align: center;
+  text-decoration: none;
 }
 
-.sidebar__button:hover {
+.sidebar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sidebar__item:hover {
   scale: 0.98;
-  box-shadow: var(--secondary-accent-color) 4px 3px;
+  box-shadow: var(--shadow-accent-color) 4px 4px;
   border: 2px solid white;
+  animation: change-color 3s alternate infinite;
 }
 
 .footer {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-top: var(--margin-xl);
+  padding: var(--padding-xl) var(--padding-l) var(--padding-s);
   font-size: var(--font-size-m);
   background-color: var(--secondary-color);
-  padding: var(--padding-l);
+}
+
+.footer-secret {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s ease-in 0.5s, opacity 2s ease-in 0.5s, animation 2s ease-in;
+}
+
+.footer:hover .footer-secret {
+  visibility: visible;
+  opacity: 1;
+  animation: breathing-text 3s alternate infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+  }
+
+  .card:hover {
+    animation: none;
+  }
+
+  .card:target {
+    animation: none;
+    background-color: var(--primary-accent-color);
+  }
+
+  .main__sidebar {
+    animation: none;
+  }
+
+  .sidebar__item:hover {
+    animation: none;
+    background-color: var(--shadow-accent-color);
+  }
 }
