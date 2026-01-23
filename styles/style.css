@@ -176,6 +176,12 @@
   scrollbar-width: thin;
 }
 
+.card__caption:focus {
+  outline: 2px solid var(--text-color);
+  border-radius: var(--border-radius-m);
+  box-shadow: inset var(--primary-accent-color) 0 0 0 2px;
+}
+
 .card__title {
   margin: 0 0 var(--margin-s) 0;
   padding-left: var(--padding-s);
@@ -195,7 +201,9 @@
   block-size: 0;
   background-color: transparent;
   border-radius: var(--border-radius-m);
-  transition: background-color 0.3s, block-size 0.3s ease-in;
+  transition:
+    background-color 0.3s,
+    block-size 0.3s ease-in;
 }
 
 .card:hover .card__text:before {
@@ -266,6 +274,12 @@
   inline-size: 40%;
 }
 
+.sidebar__link:focus {
+  outline: 2px solid var(--text-color);
+  border-radius: var(--border-radius-xs);
+  box-shadow: inset var(--secondary-accent-color) 0 0 0 2px;
+}
+
 .sidebar__item:hover {
   scale: 0.98;
   box-shadow: var(--shadow-accent-color) 4px 4px;
@@ -284,6 +298,13 @@
   padding: var(--padding-xl) var(--padding-xxl) var(--padding-s);
   font-size: var(--font-size-m);
   background-color: var(--secondary-color);
+}
+
+.footer__github-link:focus {
+  outline: 2px solid var(--text-color);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-xs);
+  box-shadow: var(--primary-accent-color) 0 0 0 2px;
 }
 
 .footer__github-icon {
@@ -335,6 +356,7 @@
 }
 
 @media (width >= 1360px) {
+
   .main__cards {
     grid-template-columns: repeat(3, 1fr);
   }

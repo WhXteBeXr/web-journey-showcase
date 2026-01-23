@@ -20,3 +20,8 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
 }
+
+::selection {
+  background-color: var(--text-color);
+  color: var(--shadow-accent-color);
+}
