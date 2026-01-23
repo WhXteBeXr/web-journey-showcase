@@ -364,10 +364,10 @@
   flex-direction: column;
   align-items: center;
   gap: 0.7rem;
+  margin: 1.5rem 2rem;
   font-family: 'JetBrains Mono', sans-serif;
   text-align: justify;
   font-size: var(--font-size-s);
-  margin: 1.5rem 2rem;
 }
 
 .text-container-secret {
@@ -473,5 +473,9 @@
 
   .footer {
     padding: var(--padding-m);
+  }
+
+  .footer__text-container {
+    margin: 0.8rem 0.5rem;
   }
 }
