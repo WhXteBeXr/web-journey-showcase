@@ -429,8 +429,20 @@
 
 @media (width <= 700px) {
 
+  .page {
+    padding: var(--padding-m);
+  }
+
+  .header {
+    padding: var(--padding-m);
+  }
+
   .main {
     grid-template-columns: 1fr;
+  }
+
+  .main__cards {
+    padding: var(--padding-m);
   }
 
   .main__sidebar-nav-title-wrapper {
@@ -439,6 +451,7 @@
   }
 
   .main__sidebar-wrapper {
+    padding: var(--padding-xs);
     block-size: 100%;
     grid-row: 2;
     grid-column: 1;
@@ -456,5 +469,9 @@
   .sidebar__item {
     min-inline-size: max-content;
     padding-inline: 1.2rem;
+  }
+
+  .footer {
+    padding: var(--padding-m);
   }
 }
