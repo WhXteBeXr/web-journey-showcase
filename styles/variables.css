@@ -1,14 +1,14 @@
 :root {
   --white: #fff;
-  --dark-gray: rgb(22, 22, 22);
-  --light-gray: rgb(33, 33, 33);
+  --dark-gray: rgb(22 22 22);
+  --light-gray: rgb(33 33 33);
 
   --text-color: var(--white);
   --primary-color: var(--dark-gray);
   --secondary-color: var(--light-gray);
-  --primary-accent-color: rgb(172, 59, 230);
-  --secondary-accent-color: rgb(131, 23, 184);
-  --shadow-accent-color: rgb(107, 8, 161);
+  --primary-accent-color: rgb(172 59 230);
+  --secondary-accent-color: rgb(131 23 184);
+  --shadow-accent-color: rgb(107 8 161);
 
   --size-xxs: 0.5rem;
   --size-xs: 0.7rem;
