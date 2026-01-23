@@ -33,6 +33,7 @@
   --padding-xl: var(--size-xl);
   --padding-xxl: var(--size-xxl);
 
+  --margin-xxs: var(--size-xxs);
   --margin-xs: var(--size-xs);
   --margin-s: var(--size-s);
   --margin-m: var(--size-m);

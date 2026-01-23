@@ -42,7 +42,9 @@
     <!-- Блок с карточками -->
 
     <main class="main">
-      <h2 class="main__title">Что изучил & Мнение</h2>
+      <div class="main__title-wrapper">
+        <h2 class="main__title">Что изучил & Мнение</h2>
+      </div>
       <section class="main__cards">
         <div id="card-01" class="card block-appearance">
           <img
@@ -178,36 +180,39 @@
       </section>
 
       <!-- Навигационная панель -->
-
-      <h3 class="main__sidebar-nav-title">Навигация</h3>
-      <aside class="main__sidebar">
-        <ul class="sidebar__list">
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-01">Стили CSS</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-02">Git & GitHub</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-03">Разметка</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-04">БЭМ</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-05">HTML</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-06">Доступность</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-07">Графика</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#card-08">Интерес</a>
-          </li>
-        </ul>
-      </aside>
+      <div class="main__sidebar-nav-title-wrapper">
+        <h3 class="main__sidebar-nav-title">Навигация</h3>
+      </div>
+      <section class="main__sidebar-wrapper">
+        <aside class="main__sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-01">Стили CSS</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-02">Git & GitHub</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-03">Разметка</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-04">БЭМ</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-05">HTML</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-06">Доступность</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-07">Графика</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#card-08">Интерес</a>
+            </li>
+          </ul>
+        </aside>
+      </section>
     </main>
 
     <!-- Подвал -->
@@ -232,7 +237,6 @@
           Это была небольшая страничка о том, что я умею. Буду продолжать
           изучать всякое-разное и дальше 😌
         </p>
-        <br />
         <p>&copy; 2026 WhXteBeXr</p>
       </div>
     </footer>
