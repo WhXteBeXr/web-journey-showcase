@@ -329,15 +329,14 @@
   visibility: hidden;
   opacity: 0;
   transition:
-    visibility 2s ease-in 0.5s,
-    opacity 2s ease-in 0.5s,
-    animation 2s ease-in;
+    visibility 2s ease-in,
+    opacity 1s ease-in;
 }
 
 .footer:hover .text-container-secret {
   visibility: visible;
   opacity: 1;
-  animation: breathing-text 3s alternate infinite;
+  animation: breathing-text 2s alternate infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
