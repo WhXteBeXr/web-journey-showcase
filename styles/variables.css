@@ -6,9 +6,9 @@
   --text-color: var(--white);
   --primary-color: var(--dark-gray);
   --secondary-color: var(--light-gray);
-  --primary-accent-color: rgb(149, 45, 202);
-  --secondary-accent-color: rgb(113, 16, 161);
-  --shadow-accent-color: rgb(87, 8, 129);
+  --primary-accent-color: rgb(126, 30, 170);
+  --secondary-accent-color: rgb(97, 7, 142);
+  --shadow-accent-color: rgb(77, 7, 113);
 
   --size-xxs: 0.5rem;
   --size-xs: 0.7rem;
